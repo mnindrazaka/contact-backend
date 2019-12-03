@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact Backend</title>
+    <style>
+      * {
+        font-family: Helvetica, sans-serif;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .table {
+        border-collapse: collapse;
+      }
+
+      .table thead {
+        background-color: #282828;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      .table thead th {
+        padding: 10px 20px;
+      }
+
+      .table tbody td {
+        padding: 10px 20px;
+        border: solid 1px #282828;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Endpoint Contact Backend</h1>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>URL</th>
+          <th>Method</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>/contact</td>
+          <td>GET</td>
+          <td>get all contact</td>
+        </tr>
+
+        <tr>
+          <td>/contact/:id</td>
+          <td>GET</td>
+          <td>get contact by id</td>
+        </tr>
+
+        <tr>
+          <td>/contact</td>
+          <td>POST</td>
+          <td>create contact</td>
+        </tr>
+
+        <tr>
+          <td>/contact/:id</td>
+          <td>PUT</td>
+          <td>edit contact by id</td>
+        </tr>
+
+        <tr>
+          <td>/contact/:id</td>
+          <td>DELETE</td>
+          <td>delete contact by id</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -22,6 +22,10 @@ let data = [
 
 app.use(express.json())
 
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/index.html')
+})
+
 app.get('/contact', function(req, res) {
   res.send(data)
 })
