@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const shortid = require('shortid')
 
 let data = [
@@ -21,6 +22,7 @@ let data = [
 ]
 
 app.use(express.json())
+app.use(cors())
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html')
